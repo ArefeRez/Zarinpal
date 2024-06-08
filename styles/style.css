@@ -52,6 +52,147 @@ header{
     width: 27px;
     display: none;
 }
+
+.hamburger-menu{
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    width: 100%;
+    z-index: 100;
+    font-family: YekanBakhMedium;
+    transform: translatey(-100%);
+    
+}
+.cross-icon{
+    width: 100%;
+    text-align: left;
+    padding: 25px 0;
+
+}
+.cross-icon img{
+    width: 20px;
+    margin-left: 30px;
+}
+.hamburger-menu-items{
+    padding: 10px 30px;
+
+}
+.hamburger-menu-items ul{
+    list-style: none;
+}
+.hamburger-menu-items a{
+    text-decoration: none;
+    color: #000;
+    display: inline-block;
+    padding: 3px 0;
+}
+.hamburger-menu-items div{
+    height: 1px;
+    background-color: #dfe1e4;
+    width: 90%;
+    margin: 8px 0;
+}
+.more-item{
+    display: flex;
+    align-items: center;
+    background-color: #eee;
+    padding: 20px 50px;
+}
+.more-item img{
+    width: 15px;
+    margin-right: 5px;
+}
+.more-item a{
+    text-decoration: none;
+    color: #28457b;
+    font-size: 0.85rem;
+}
+.show-hamburger-menu{
+    animation: fadeInDown 0.35s forwards;
+}
+#show-more-menu{
+    position: relative;
+
+}
+#show-more-menu ul{
+    position: absolute;
+    top: 0;
+    left: -35px;
+    background-color: #fff;
+    display: none;
+    border-top: 5px solid #f8e88b;
+    border-radius: 12px;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    margin-top: 23px;
+    list-style: none;
+    width: 123px;
+}
+#show-more-menu li{
+    margin: 0;
+    padding: 10px 20px;
+    font-size: 0.8rem;
+    color: #000;
+}
+#show-more-menu li:hover{
+    background-color: rgba(232, 239, 254, 0.6);
+}
+#show-product-menu{
+    position: relative;
+}
+.product-menu{
+    position: absolute;
+    top: 0;
+    left: -135px;
+    background-color: #fff;
+    display: none;
+    display: flex;
+    justify-content: flex-start;
+    width: 372px;
+    border-top: 5px solid #f8e88b;
+    border-radius: 12px;
+    padding-top: 20px;
+    margin-top: 23px;
+}
+.product-menu a p:first-child{
+    color: #000;
+    font-size: 0.95rem;
+}
+.product-menu a p:last-child{
+    color: #000;
+    font-size: 0.7rem;
+}
+.product-menu a{
+    display: block;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+
+
+@keyframes showUp {
+    0% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInDown{
+    0%{
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 @media (max-width:1200px){
     header{
         width: 940px;
@@ -85,3 +226,4 @@ header{
         padding: 10px 8px;
     }
 }
+
