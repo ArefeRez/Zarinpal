@@ -370,7 +370,73 @@ header{
 .fourth-item{
     border-right:1px solid #e0e4e7 ;
 }
-
+footer {
+    width: 1170px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+.footer-links{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: calc(100% - 330px);
+    margin-bottom: 50px;
+    padding: 0 10px;
+}
+.social-media{
+    width: 330px;
+    padding: 0 30px;
+    margin-bottom: 100%;
+}
+.social-media p{
+    color: #303030;
+    font-family: YekanBakhHeavy;
+    font-size: 1.3rem;
+}
+.social-media div{
+    display: flex;
+    margin-top: 20px;
+}
+.social-media a{
+    color: #eff4ef;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-left: 15px;
+}
+.footer-links p{
+    font-size: 1.3rem;
+    font-family: YekanBakhHeavy;
+    margin-top: 15px;
+    color: #303030;
+}
+.footer-links ul{
+    list-style: none;
+}
+.footer-links a{
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: YekanBakhMedium;
+    color: #000;
+}
+.footer-links li{
+    padding: 8px 0;
+}
+.bell{
+    background-color: #2e82ff;
+    width: fit-content;
+    padding: 7px 7px 0;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+}
+.bell img{
+    width: 40px;
+}
 
 
 @keyframes showUp {
@@ -430,6 +496,9 @@ header{
     .items .item{
         padding: 18px 0 20px 50px;
     }
+    footer{
+        width: 940px;
+    }
 }
 @media (max-width:990px){
     header{
@@ -478,6 +547,16 @@ header{
         width: auto;
         padding: 0 35px;
     }
+    footer{
+        flex-direction: column;
+        width: calc(100% - 60px);
+    }
+    .footer-links{
+        width: 100%;
+    }
+    .social-media{
+        padding: 0 10px;
+    }
 }
 @media (max-width:768px){
     .header-ul{
@@ -517,6 +596,16 @@ header{
     .items .item{
         padding: 20px 0 20px;
     }
+    footer{
+        width: calc(100% - 120px);
+        margin: 0 60px;
+    }
+    .footer-links{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .footer-links div{
+        margin-top: 25px;
+    }
 }
 @media (max-width:575px){
     .banner{
@@ -546,6 +635,13 @@ header{
     }
     .items .item{
         padding: 18px 0;
+    }
+    footer{
+        width: calc(100% - 60);
+        margin: 0 30px;
+    }
+    .footer-links a,.footer-links p{
+        font-size: 0.9rem;
     }
 }
 
